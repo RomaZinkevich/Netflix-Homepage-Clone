@@ -81,6 +81,47 @@ h1, h2, h3, h4, p {
 }
 
 
+/* Tabs */
+.tabs {
+    background-color: #141414;
+    border-bottom: #3d3d3d solid 2px;
+    padding-top: 1rem;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.tab-item {
+    padding: 1.5rem 0;
+}
+
+.tab-item p {
+    font-size: 1.2rem;
+}
+
+.tab-item * {
+    color:#999;
+}
+
+.tab-item:hover *{
+    color:#ffffff;
+    cursor: pointer;
+}
+
+.selected-tab {
+    border-bottom: #e50914 4px solid;
+}
+
 /* Btn */
 .btn {
     display: inline-block;
