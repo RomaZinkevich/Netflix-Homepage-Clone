@@ -1,4 +1,4 @@
-body {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -11,6 +11,14 @@ a {
 
 h1, h2, h3, h4, p {
     color: #ffffff;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
 }
 
 
@@ -88,7 +96,7 @@ h1, h2, h3, h4, p {
     padding-top: 1rem;
 }
 
-.container {
+.tabs .container {
     max-width: 70%;
     margin: auto;
     overflow: hidden;
@@ -107,6 +115,7 @@ h1, h2, h3, h4, p {
 
 .tab-item p {
     font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 .tab-item * {
@@ -122,6 +131,85 @@ h1, h2, h3, h4, p {
     border-bottom: #e50914 4px solid;
 }
 
+/* Tab-content */
+.tab-content {
+    background-color: #000;
+}
+
+.tab-content .container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.tab-content-item {
+    display: none;
+}
+
+.tab-content .show {
+    display: block;
+}
+
+.tab-content-item > div{
+    padding: 3rem 0;
+}
+
+.tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.tab-2-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-2-content-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.tab-3-content-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+table.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table.table thead{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+table.table tbody{
+    color:#999;
+}
+
+table.table tbody tr:nth-last-of-type(even) {
+    background-color: #242424;
+}
+
+td,th {
+    padding:0.8rem 1rem;
+}
+
+
 /* Btn */
 .btn {
     display: inline-block;
@@ -133,6 +221,8 @@ h1, h2, h3, h4, p {
     border: none;
     cursor: pointer;
     box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    border-radius: 2px;
+    margin-right: 0.5rem;
 }
 
 .btn:hover {
@@ -143,7 +233,27 @@ h1, h2, h3, h4, p {
     border-radius: 5px;
 }
 
-.btn-lg {
+.btn-xl {
     font-size: 2rem;
-    padding: 1.5rem 2.1rem;
+    padding: 1rem 1.5rem;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+}
+
+/* Styles */
+.text-lg {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.text-md {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-dark {
+    color:#999
 }
