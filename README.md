@@ -5,6 +5,6 @@ This is Netlifx homepage replica project (task from Traversy Media)! This is a f
 You can view the live demo of the project [here](https://romazinkevich.github.io/Netflix-Homepage-Clone/).
 
 # Features
-- Responsive design for various screen sizes. (Not yet)
+- Responsive design for various screen sizes.
 - Accurate representation of the Netflix homepage.
 - Implemented using only HTML, CSS and JS.
